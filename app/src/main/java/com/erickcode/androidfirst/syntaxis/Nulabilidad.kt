@@ -1,4 +1,4 @@
-package com.erickcode.androidfirst
+package com.erickcode.androidfirst.syntaxis
 
 fun main(){
     var name:String? = "Erick"

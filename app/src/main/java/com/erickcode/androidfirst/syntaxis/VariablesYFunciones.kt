@@ -1,4 +1,4 @@
-package com.erickcode.androidfirst
+package com.erickcode.androidfirst.syntaxis
 
 val age: Int = 31
 fun main() {
