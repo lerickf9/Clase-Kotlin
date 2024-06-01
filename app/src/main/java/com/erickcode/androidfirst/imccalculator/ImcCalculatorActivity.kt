@@ -1,13 +1,18 @@
 package com.erickcode.androidfirst.imccalculator
 
+import android.icu.text.DecimalFormat
+import android.os.Build
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.erickcode.androidfirst.R
+import com.google.android.material.slider.RangeSlider
 
 class ImcCalculatorActivity : AppCompatActivity() {
 
@@ -17,6 +22,8 @@ class ImcCalculatorActivity : AppCompatActivity() {
 
     private lateinit var viewMale:CardView
     private lateinit var viewFemale:CardView
+    private lateinit var tvHeight:TextView
+    private lateinit var rsHeight: RangeSlider
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +44,11 @@ class ImcCalculatorActivity : AppCompatActivity() {
     private fun initComponents(){
         viewMale = findViewById(R.id.viewMale)
         viewFemale = findViewById(R.id.viewFemale)
+        tvHeight = findViewById(R.id.tvHeight)
+        rsHeight = findViewById(R.id.rsHeight)
+
     }
+    @RequiresApi(Build.VERSION_CODES.N)
     private fun initListeners() {
         viewMale.setOnClickListener{
             changeGender()
@@ -46,6 +57,11 @@ class ImcCalculatorActivity : AppCompatActivity() {
         viewFemale.setOnClickListener{
             changeGender()
             setGenderColor()
+        }
+        rsHeight.addOnChangeListener{ _, value, _ ->
+            val df = DecimalFormat("#.##")
+            val result = df.format(value)
+            tvHeight.text = "$result cm"
         }
     }
     private fun changeGender(){
