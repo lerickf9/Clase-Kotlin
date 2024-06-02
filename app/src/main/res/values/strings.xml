@@ -16,5 +16,9 @@
     <string name="title_peso_normal">Normal</string>
     <string name="descripcion_peso_normal">Esás en el peso optimo</string>
 
+    <string name="title_sobrepeso">Sobre Peso</string>
+    <string name="descripcion_sobrepeso">Esás sobre el Peso optimo</string>
 
+    <string name="title_obesidad">Obesidad</string>
+    <string name="descripcion_obesidad">Esás muy por encima del peso optimo</string>
 </resources>
