@@ -29,9 +29,9 @@
     <color name="todo_subtitle_text">#000000</color>
     <color name="todo_acent">#151628</color>
 
-    <color name="todo_business_category">#E0ECF7</color>
-    <color name="todo_personal_category">#A9D4E5</color>
-    <color name="todo_other_category">#334A67</color>
+    <color name="todo_business_category">#FF9800</color>
+    <color name="todo_personal_category">#0B2CE1</color>
+    <color name="todo_other_category">#2BE132</color>
 
 
 </resources>
