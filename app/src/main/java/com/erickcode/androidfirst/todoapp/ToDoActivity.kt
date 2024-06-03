@@ -1,5 +1,6 @@
 package com.erickcode.androidfirst.todoapp
 
+import android.app.Dialog
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.erickcode.androidfirst.R
 import com.erickcode.androidfirst.todoapp.TaskCategory.*
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ToDoActivity : AppCompatActivity() {
 
@@ -30,6 +32,8 @@ class ToDoActivity : AppCompatActivity() {
     private lateinit var rvTask: RecyclerView
     private lateinit var taskAdapter: TasksAdapter
 
+    private lateinit var fabAddTask:FloatingActionButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -41,11 +45,21 @@ class ToDoActivity : AppCompatActivity() {
         }
         initComponents()
         initUI()
+        initLinstener()
+    }
+
+    private fun initLinstener() {
+        fabAddTask.setOnClickListener{ showdialog() }
+    }
+
+    private fun showdialog(){
+        val dialog= Dialog(this)
     }
 
     private fun initComponents() {
         rvCategories = findViewById(R.id.rvCategories)
         rvTask = findViewById(R.id.rvTasks)
+        fabAddTask = findViewById(R.id.fabAddTask)
     }
     private fun initUI() {
         categoriesAdapter = CategoriesAdapter(categories)

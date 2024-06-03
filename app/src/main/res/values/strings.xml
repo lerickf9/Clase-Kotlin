@@ -29,4 +29,6 @@
     <string name="todo_categories">Categorias:</string>
     <string name="todo_task">Tareas</string>
 
+    <string name="dialog">Añade la tarea</string>
+
 </resources>
