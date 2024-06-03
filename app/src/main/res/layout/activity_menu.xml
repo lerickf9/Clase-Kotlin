@@ -3,24 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
+    android:orientation="vertical"
     tools:context=".MenuActivity">
 
     <Button
         android:id="@+id/btnSaludarApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Saludar"
-        />
+        android:text="Saludar" />
 
     <Button
         android:id="@+id/btnIMCApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="IMC APP" />
+
+    <Button
+        android:id="@+id/btnToDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To-Do APP" />
 
 
 </LinearLayout>

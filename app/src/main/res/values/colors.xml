@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+
+    <!--    IMC app    -->
     <color name="background_component">#1D1E33</color>
     <color name="background_component_selected">#FF111328</color>
     <color name="background_app">#0E0B20</color>
@@ -15,11 +17,21 @@
     <color name="title_text">#FF8D8E98</color>
     <color name="background_fab">#FF6200EE</color>
 
-
     <color name="bajo_peso">#FFF200</color>
     <color name="peso_normal">#11FF00</color>
     <color name="sobre_peso">#FF6535</color>
     <color name="obesidad">#DD0505</color>
+
+    <!--    To-Do app    -->
+    <color name="todo_background_card">#191919</color>
+    <color name="todo_background_disabled">#606060</color>
+    <color name="todo_background_todo_app">#A7A7A7</color>
+    <color name="todo_subtitle_text">#000000</color>
+    <color name="todo_acent">#151628</color>
+
+    <color name="todo_business_category">#E0ECF7</color>
+    <color name="todo_personal_category">#A9D4E5</color>
+    <color name="todo_other_category">#334A67</color>
 
 
 </resources>

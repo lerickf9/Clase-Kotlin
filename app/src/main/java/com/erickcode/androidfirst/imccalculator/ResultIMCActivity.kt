@@ -35,7 +35,7 @@ class ResultIMCActivity : AppCompatActivity() {
     }
 
     private fun initListener() {
-        btnRecalculate.setOnClickListener{ onBackPressedDispatcher }
+        btnRecalculate.setOnClickListener { onBackPressed() }
     }
 
     private fun initUI(result:Double) { // Bajo peso
