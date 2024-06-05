@@ -29,6 +29,10 @@
     <string name="todo_categories">Categorias:</string>
     <string name="todo_task">Tareas</string>
 
-    <string name="dialog">Añade la tarea</string>
+    <string name="todo_dialog_add_task">Añade tarea</string>
+    <string name="todo_dialog_category_business">Negocios</string>
+    <string name="todo_dialog_category_personal">Personal</string>
+    <string name="todo_dialog_category_other">Otros</string>
+    <string name="dialog_add_task_button">Crear Tarea</string>
 
 </resources>

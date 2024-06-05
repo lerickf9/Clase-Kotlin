@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.erickcode.androidfirst.R
 
-class CategoriesAdapter (private val categories:List<TaskCategory>): RecyclerView.Adapter<CategoriesViewHolder>(){
+class CategoriesAdapter (private val categories:List<TaskCategory>, private val onItemSelected:(Int) -> Unit ): RecyclerView.Adapter<CategoriesViewHolder>(){
 
     //onCreateViewHolder crea una nueva vista pasando nueva informacion
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesViewHolder {
@@ -17,7 +17,7 @@ class CategoriesAdapter (private val categories:List<TaskCategory>): RecyclerVie
 
 
     override fun onBindViewHolder(holder: CategoriesViewHolder, position: Int) {
-        holder.render(categories[position])
+        holder.render(categories[position], onItemSelected)
     }
 
 }
