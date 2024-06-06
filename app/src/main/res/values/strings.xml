@@ -1,6 +1,6 @@
 <resources>
 
-<!--    IMC APP-->
+    <!--    IMC APP-->
     <string name="app_name">AndroidFirst</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
@@ -24,7 +24,7 @@
     <string name="title_obesidad">Obesidad</string>
     <string name="descripcion_obesidad">Esás muy por encima del peso optimo</string>
 
-<!--to-do App-->
+    <!--to-do App-->
     <string name="todo_title">Bienvenido Erick</string>
     <string name="todo_categories">Categorias:</string>
     <string name="todo_task">Tareas</string>
